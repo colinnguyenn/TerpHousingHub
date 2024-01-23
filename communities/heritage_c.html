@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerpHousingHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <div id="title">
+                    TerpHousingHub
+                </div>
+                <img src="../images/maryland_logo.jpg" id="logo" height="75" width="75">
+            </a>
+            <div id="tagline-container">
+                | On-Campus & Off-Campus Ratings & Reviews
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../residential.html" class="navbar__links"> On-Campus </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../off-campus.html" class="navbar__links"> Off-Campus </a>
+                </li>
+                <li>
+                    <a href="../about.html" class="navbar__links"> About Us </a>
+                </li>
+            </ul>
+            <div class="navbar__search">
+                <form id="searchForm">
+                    <input type="text" name="search" placeholder="Search for housing...">
+                    <button type="submit" class="button" >Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <script type="module" src="../search.js"></script>
+
+    <!-- Dorms Section -->
+    <div class="title">
+        <h1>
+            Heritage Community Dorms
+        </h1>
+    </div>
+    <div class="main">
+        <div class="list">
+            <a href="/communities/heritage_c/pyon-chen_hall.html" class="dorm_portal">
+                <div class="dorm_container Pyon-Chen_Hall" data-dorm-name="Pyon-Chen Hall" data-dorm-community="heritage_c">
+                    <img src="heritage_c/pyon-chen_hall.jpg" class="dorm_img">
+                    <div class="dorm_title">
+                        <div class="dorm_hall_title">
+                            Pyon-Chen Hall
+                        </div>
+                        <div class="rating_container">
+                            <div class="rating">
+                                <div class="pyon-chen_hall_average_star">
+                                </div>
+                            </div>
+                            <div data-dorm-reviews="pyonChenReviews">
+                                0
+                            </div>
+                            <div class="review_title">
+                                reviews
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/communities/heritage_c/johnson-whittle_hall.html" class="dorm_portal">
+                <div class="dorm_container Johnson-Whittle_Hall" data-dorm-name="Johnson-Whittle Hall">
+                    <img src="heritage_c/johnson-whittle_hall.jpg" class="dorm_img">
+                    <div class="dorm_title">
+                        <div class="dorm_hall_title">
+                            Johnson-Whittle Hall
+                        </div>
+                        <div class="rating_container">
+                            <div class="rating">
+                                <div class="johnson-whittle_hall_average_star">
+                                </div>
+                            </div>
+                            <div data-dorm-reviews="johnsonWhittleReviews">
+                                0
+                            </div>
+                            <div class="review_title">
+                                reviews
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+    <script src="display_reviews.js"></script>
+</body>
+</html>
