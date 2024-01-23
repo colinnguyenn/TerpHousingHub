@@ -14,9 +14,9 @@ function performSearch() {
     const currCommunity = dormCommunityMap[searchName];
 
     if (currCommunity) {
-        window.location.href = `/communities/${currCommunity}/${searchName}.html`;
+        window.location.href = `/TerpHousingHub/communities/${currCommunity}/${searchName}.html`;
     } else if (validApartments.includes(apartmentName)) {
-        window.location.href = `/communities/${apartmentName}.html`;
+        window.location.href = `/TerpHousingHub/communities/${apartmentName}.html`;
     } else {
         window.location.href = 'error.html'
     }
