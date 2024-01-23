@@ -14,14 +14,14 @@ function performSearch() {
     const currCommunity = dormCommunityMap[searchName];
 
     if (currCommunity) {
-        window.location.href = `/communities/${currCommunity}/${searchName}.html`
+        window.location.href = `TerpHousingHub/communities/${currCommunity}/${searchName}.html`
     } else if (validApartments.includes(apartmentName) && (searchName === 'oakland_hall' || searchName === 'leonardtown_community'
         || searchName === 'south_campus_commons')) {
-        window.location.href = `/communities/${apartmentName}.html`;
+        window.location.href = `TerpHousingHub/communities/${apartmentName}.html`;
     } else if (validApartments.includes(apartmentName)) {
-        window.location.href = `/apartments/${apartmentName}.html`;
+        window.location.href = `TerpHousingHub/apartments/${apartmentName}.html`;
     } else {
-        window.location.href = '/error.html'
+        window.location.href = 'TerpHousingHub/error.html'
     }    
 }
 
