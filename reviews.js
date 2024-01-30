@@ -68,11 +68,11 @@ reviewForm.addEventListener('submit', function (event) {
 
         if (validApartments.includes(apartmentName) && (dormName === 'oakland_hall' || dormName === 'leonardtown_community'
             || dormName === 'south_campus_commons')) {
-                window.location.href = `/communities/${apartmentName}.html`;
+                window.location.href = `/TerpHousingHub/communities/${apartmentName}.html`;
         } else  if (validApartments.includes(apartmentName)) {
-            window.location.href = `/apartments/${apartmentName}.html`;
+            window.location.href = `/TerpHousingHub/apartments/${apartmentName}.html`;
         } else {
-            window.location.href = `/communities/${currCommunity}/${dormName}.html`;
+            window.location.href = `/TerpHousingHub/communities/${currCommunity}/${dormName}.html`;
         }
     } else {
         showError("residency-error", "Please enter a valid residency (i.e. \"La Plata Hall\")");
